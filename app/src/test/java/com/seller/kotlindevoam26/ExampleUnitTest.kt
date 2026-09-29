@@ -106,21 +106,42 @@ class ExampleUnitTest {
     }
 
     @Test
-    fun elvis_exemple3() {
-        var nom : String? = ""
-        var c : Int? = null
-        var k : Double? = null
+    fun elvis_exemple2() {
 
-        var taille = nom?.length ?: 10
-        println(taille)
-        println("**********************************")
         var somme = 0
-
         for(i in 1..4){
             somme = somme + i
             println(i)
         }
+        println(somme)
 
+    }
+    @Test
+    fun factoriel() {
+
+        var fact = 1
+        for(i in 5 downTo 1){
+
+            fact = fact * i
+        }
+        println("**********************************")
+
+        var n = 5
+        var fato = 1
+        while (n >= 1){
+
+            fato = fato * n
+
+            n = n - 1
+        }
+
+
+        //println(fato)
+        var compteur = 3
+        while( compteur > 1 ){
+            println(compteur)
+            compteur = compteur - 1
+        }
     }
 
 
