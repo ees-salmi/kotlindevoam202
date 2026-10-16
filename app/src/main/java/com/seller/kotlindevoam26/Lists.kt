@@ -13,48 +13,65 @@ class Personnes {
     fun removeChild(child : String){
         enfants.remove(child)
     }
+}
 
+class Stagiair(var cef:Int, var nom : String){
+    var notes  = arrayListOf<Double>()
+    fun ajouterNote(ab : Double){
+        notes.add(12.5)
+    }
 
+    fun supprimerNote(nt : Double){
+        notes.remove(nt)
+    }
 }
 
 fun main(){
-    var yasine = Personnes() // objet
-    yasine.addChild("khadija")
-    println(yasine.enfants)
+    var donia = Stagiair(124,"donia")
+    donia.ajouterNote(16.0)
+    donia.ajouterNote(20.0)
+    donia.ajouterNote(19.0)
+    println(donia.notes)
 
-    yasine.removeChild("omar")
-    println(yasine.enfants)
 
-    /* var list : ArrayList<Int> = arrayListOf<Int>()
-     list.add(12)
-     list.add(11)
-     list.add(4)
-     list.add(7)
-     list.remove(12)
-     println(list.filter { it % 2 == 0})
 
-     list.add(9)
-     // la taille de la list
-     //println(list.size)
-     list.add(17)
-     for (elm in list){
-         if(elm < 10){
-             println(elm)
-         }
-     }
-     var notesvalide = list.filter { it >= 10 }
-     var notesnonvalide = list.filter { it < 10 }
-     println(notesvalide)
-     println(notesnonvalide)
+    /* var yasine = Personnes() // objet
+     yasine.addChild("khadija")
+     println(yasine.enfants)
 
-    var lists : ArrayList<String> = arrayListOf()
-    lists.add("yasser")
-    lists.add("khadija")
-    lists.add("mohamed")
-    lists.add("ali")
-    lists.add("aya")
-    var rest = lists.filter { it.contains("me") }
-    print(rest)*/
+     yasine.removeChild("omar")
+     println(yasine.enfants)
+
+      var list : ArrayList<Int> = arrayListOf<Int>()
+      list.add(12)
+      list.add(11)
+      list.add(4)
+      list.add(7)
+      list.remove(12)
+      println(list.filter { it % 2 == 0})
+
+      list.add(9)
+      // la taille de la list
+      //println(list.size)
+      list.add(17)
+      for (elm in list){
+          if(elm < 10){
+              println(elm)
+          }
+      }
+      var notesvalide = list.filter { it >= 10 }
+      var notesnonvalide = list.filter { it < 10 }
+      println(notesvalide)
+      println(notesnonvalide)
+
+     var lists : ArrayList<String> = arrayListOf()
+     lists.add("yasser")
+     lists.add("khadija")
+     lists.add("mohamed")
+     lists.add("ali")
+     lists.add("aya")
+     var rest = lists.filter { it.contains("me") }
+     print(rest)*/
 
 
 
